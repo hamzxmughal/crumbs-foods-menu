@@ -1,0 +1,58 @@
+cat,sub,deal,name,desc,price,priceUnknown,dippable,toppable,flavors,sizes
+deals,,1,Deal 1,1 Zinger Burger · 1 Regular Fries · 1 Regular Drink,650,,,,,
+deals,,2,Deal 2,1 Petty Burger · 1 Regular Fries · 1 Regular Drink,550,,,,,
+deals,,3,Deal 3,2 Zinger Burgers · 2 Petty Burgers · 1 Family Fries · 1.5L Drink,1990,,,,,
+deals,,4,Deal 4,1 Mighty Burger · 1 Regular Fries · 1 Regular Drink,950,,,,,
+deals,,5,Deal 5,3 Pcs Crispy Chicken · 1 Regular Fries · 1 Regular Drink,1000,,,,,
+deals,,6,Deal 6,10 Hot Wings · 1 Regular Fries · 1 Regular Drink,1050,,,,,
+deals,,7,Deal 7,10 Hot Wings · 1 Large Stuffer Pizza · 1 Family Fries · 1.5L Drink,3250,,,,,
+deals,,8,Deal 8,1 Large Stuffer Pizza · 1 Pasta · 1.5L Drink,2950,,,,,
+deals,,9,Deal 9,2 Large Regular Pizzas · 1.5L Drink,3500,,,,,
+deals,,10,Deal 10,1 Medium Regular Pizza · 10 Oven Baked Wings · 1 Family Fries · 1.5L Drink,2450,,,,,
+deals,,11,Deal 11,1 Large Special Pizza · 1 Large Stuffer Pizza · 1.5L Drink,3900,,,,,
+deals,,12,Deal 12,9 Pcs Crispy Chicken · 1.5L Drink,2200,,,,,
+broast,,,Crumbs Injected Broast,"Served with bun, dip sauce & fries.",,,TRUE,,,"Quarter|1 leg, 1 thigh|730;Half|2 leg, 2 thigh|1200;Full|4 leg, 4 thigh|2100"
+  crispy,Burgers,,Zinger Burger,,450,,,,,
+crispy,Burgers,,Petty Burger,,380,,,,,
+crispy,Burgers,,Mighty Burger,,750,,,,,
+crispy,Burgers,,Grill Burger,,680,,,,,
+crispy,Burgers,,Smash Beef Burger,,,,,,,Single||780;Double||1080
+  crispy,Fried Chicken,,Fried Chicken,,,,TRUE,,,1 Pc||280;3 Pcs||750;9 Pcs||2050
+    crispy,Hot Wings,,Hot Wings,,,,TRUE,,,5 Pcs||400;10 Pcs||700;15 Pcs||1000
+      pizza,Regular Pizza,,Chicken Tikka,,,,,TRUE,,S||630;M||1230;L||1730
+        pizza,Regular Pizza,,Pepperoni Pizza,,,,,TRUE,,S||630;M||1230;L||1730
+          pizza,Regular Pizza,,Chicken Fajita,,,,,TRUE,,S||630;M||1230;L||1730
+            pizza,Regular Pizza,,Cheese Lover,,,,,TRUE,,S||630;M||1230;L||1730
+              pizza,Special Pizza,,Supreme Pizza,,,,,TRUE,,M||1370;L||1840
+                pizza,Special Pizza,,Crown Crust,,,,,TRUE,,M||1370;L||1840
+                  pizza,Stuffer Pizza,,Kabab Stuffer,,,,,TRUE,,M||1460;L||2050
+                    pizza,Stuffer Pizza,,Cheese Stuffer,,,,,TRUE,,M||1460;L||2050
+                      pizza,Stuffer Pizza,,Malai Boti Pizza,,,,,TRUE,,M||1460;L||2050
+                        pizza,Stuffer Pizza,,Lazania Pizza,,,,,TRUE,,M||1460;L||2050
+                          starters,Wings (10 Pcs),,Oven Baked Wings,,780,,TRUE,,,
+starters,Wings (10 Pcs),,Peri Peri Wings,,780,,TRUE,,,
+starters,Wings (10 Pcs),,Honey Wings,,780,,TRUE,,,
+starters,Wings (10 Pcs),,B.B.Q Wings,,780,,TRUE,,,
+starters,Sandwiches,,Pizza Sandwich,,700,,,,,
+starters,Sandwiches,,Club Sandwich,,600,,,,,
+starters,Wraps,,Crunchy Wrap,,750,,,,,
+starters,Wraps,,Smokey Wrap,,,,TRUE,,,
+starters,Nuggets,,Nuggets,,,,TRUE,,,5 Pcs||400;10 Pcs||700;15 Pcs||1000
+  starters,Fries,,Regular Fries,,260,,,,,
+starters,Fries,,Family Fries,,460,,,,,
+starters,Fries,,Loaded Fries,,700,,,,,
+starters,Pasta,,Crunchy Pasta,,870,,,,,
+starters,Pasta,,Creamy Pasta,,,,TRUE,,,
+cafe,Classic Coffee,,Café Latte,,450,,,,,
+cafe,Classic Coffee,,Cappuccino,,480,,,,,
+cafe,Classic Coffee,,Americano,,450,,,,,
+cafe,Classic Coffee,,Flavoured Coffee,,550,,,,Hazelnut|Caramel|Vanilla,
+cafe,Cold Classic Coffee,,Ice Latte,,450,,,,,
+cafe,Cold Classic Coffee,,Ice Americano,,450,,,,,
+cafe,Cold Classic Coffee,,Flavoured Ice Coffee,,550,,,,Hazelnut|Caramel|Vanilla,
+cafe,Smoothies,,Smoothie,,550,,,,Kiwi|Blue Berry,
+cafe,Chillers,,Chiller,,500,,,,Kiwi|Blue Berry,
+cafe,Crumbs Ice Cream,,Ice Cream,,150,,,,Chocolate|Blue Berry|Strawberry|Sprinkles,
+cafe,Crumbs Slush,,Slush,,150,,,,Mango|Blue Berry|Orange,
+drinks,,,Pepsi,,,,,,,345 ML||100;500 ML||150;1.5 LTR||250
+  drinks,,,Mineral Water (Aquafina),,70,,,,,
