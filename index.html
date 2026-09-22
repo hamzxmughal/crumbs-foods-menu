@@ -674,7 +674,7 @@
    How to get the link: File > Share > Publish to web > pick the sheet,
    format "Comma-separated values (.csv)" > Publish > copy the URL.
 */
-const SHEET_CSV_URL = "";
+const SHEET_CSV_URL = "https://docs.google.com/spreadsheets/d/147UOXn2g6R81fGuans3l8U8i1UhcG4FhuQ9aqPBaYlY/export?format=csv&gid=0";
 
 /* ============ MENU DATA ============ */
 const SAUCES = ["Cheese Slice","Honey Mustard","Garlic","Chipotle","B.B.Q","Smasher"];
@@ -806,7 +806,15 @@ let ITEMS = DEFAULT_ITEMS;
               (sub is optional — leave that segment empty: S||630)
    - priceUnknown / dippable / toppable: TRUE / FALSE (blank = false)
 */
-function parseCSV(text){
+function parseCSV(text, delim){
+  text = text.trim();
+  if(text.length > 1 && text[0] === '"' && text[text.length-1] === '"'){
+    text = text.slice(1, -1);
+  }
+  if(!delim){
+    const firstLine = text.split(/\r?\n/).find(l => l.trim() !== "") || "";
+    delim = (firstLine.split("\t").length > firstLine.split(",").length) ? "\t" : ",";
+  }
   const rows = [];
   let row = [], field = "", inQuotes = false;
   for(let i = 0; i < text.length; i++){
@@ -817,7 +825,7 @@ function parseCSV(text){
       else field += c;
     } else {
       if(c === '"'){ inQuotes = true; }
-      else if(c === ','){ row.push(field); field = ""; }
+      else if(c === delim){ row.push(field); field = ""; }
       else if(c === '\r'){ /* skip */ }
       else if(c === '\n'){ row.push(field); rows.push(row); row = []; field = ""; }
       else field += c;
